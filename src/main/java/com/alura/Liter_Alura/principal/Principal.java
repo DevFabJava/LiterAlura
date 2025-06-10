@@ -1,6 +1,9 @@
 package com.alura.Liter_Alura.principal;
 
 
+import com.alura.Liter_Alura.service.AutorService;
+import com.alura.Liter_Alura.service.IdiomaService;
+import com.alura.Liter_Alura.service.LivroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -92,7 +95,7 @@ public class Principal implements CommandLineRunner {
         try {
             Integer ano = leitura.nextInt();
             leitura.nextLine();
-            autorService.listAuthorsAliveInSpecifYear(ano).forEach(System.out::println);
+            autorService.listAuthorsAliveInSpecificYear(ano).forEach(System.out::println);
         } catch (java.util.InputMismatchException e) {
             System.out.println("Digite somente números");
         }

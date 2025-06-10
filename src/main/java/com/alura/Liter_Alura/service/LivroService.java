@@ -1,6 +1,10 @@
 package com.alura.Liter_Alura.service;
 
+import com.alura.Liter_Alura.model.Autor;
+import com.alura.Liter_Alura.model.Idioma;
 import com.alura.Liter_Alura.model.Livro;
+import com.alura.Liter_Alura.repository.AutorRepository;
+import com.alura.Liter_Alura.repository.LivroRepository;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

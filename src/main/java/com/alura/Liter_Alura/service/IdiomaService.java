@@ -1,6 +1,7 @@
 package com.alura.Liter_Alura.service;
 
 import com.alura.Liter_Alura.model.Idioma;
+import com.alura.Liter_Alura.repository.IdiomaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
